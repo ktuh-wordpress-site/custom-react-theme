@@ -740,7 +740,7 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
 .alumni__img img{display:block;margin:0 auto;}
 .about__desc p,.about__content p,.alumni__img,.alumni__content p,.join__desc p,
 .page__content p {padding: 5px 1px;}.about__help,.join__content p,.contact__content p,
-.contact__content h4,.contact__content form,.contact__content ul{padding:5px 192px;}
+.contact__content h4,.contact__content form,.contact__content ul{padding: 5px 1px;}
 .about__youtube{
   position:absolute;
   width:100%;
@@ -749,6 +749,9 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
   top:0;
   text-align:center;
   padding:5px 192px;
+}
+.policy__list {
+
 }
 .faq__question{margin-bottom:10px;text-decoration:underline;user-select:none;}
 .faq__section-qna-pair .toggle{
@@ -850,7 +853,7 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
   .navbar-default .navbar-nav > li > a:active{margin-right:0;width:auto;}
 }
 @media (max-width:992px) {
-  .navbar-left{margin-left:10px;}.news-list{padding-left:0;}
+  .navbar-left{margin-left:10px;}.news-list{padding-left:0; padding-bottom: 25px;}
   .news-list__content{width:63%;}.news-list__sidebar{width:37%;}
   .news-list__post-image,.news-list__post-image img{width:100%;}
   .news-list__post{width:100%;display:inherit;}.news-list__excerpt{clear:both;}
