@@ -8,6 +8,7 @@ import {
   NotFoundRedirect, renderSummary, getFullUrl, getFeaturedImg, entitiesToText, parseDate, daysOfWeek, toLocalStr
 } from '../utils';
 import PlayingContext from '../contexts/PlayingContext';
+import { default as Glyph } from '../reusables/Glyph';
 
 
 export default function ShowPage() {
@@ -63,9 +64,11 @@ export default function ShowPage() {
             {latestEpisodeLink
             && latestEpisodeLink.data.ktuh_latest_show_archive !== false
             && latestEpisodeLink.data.ktuh_latest_show_archive[0]
-              ? <button onClick={function () {
+              ? <div className='show__buttons'> <div className='button__wrapper'> <div className='show__tag'> <button onClick={function () {
                 switchUrl(latestEpisodeLink.data.ktuh_latest_show_archive[0], true);
-              }}>Play Latest Episode</button> : null}
+            }} className=
+                "btn btn-default show__play-btn color-button purple-button" aria-label="Left Align"><Glyph symbol="play" />
+                {' '}Play Latest Episode</button></div></div></div> : null}
             <PlaylistTable tracks={playlist}/>
           </div>
         </div>
