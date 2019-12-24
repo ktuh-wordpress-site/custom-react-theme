@@ -5,7 +5,15 @@ import PlaylistTable from './PlaylistTable';
 import AboutTheDJ from './AboutTheDJ';
 import { default as SamePageAnchor } from '../reusables/SamePageAnchor';
 import {
-  NotFoundRedirect, renderSummary, getFullUrl, getFeaturedImg, entitiesToText, parseDate, daysOfWeek, toLocalStr
+  NotFoundRedirect,
+  renderSummary,
+  getFullUrl,
+  getFeaturedImg,
+  entitiesToText,
+  parseDate,
+  daysOfWeek,
+  toLocalStr,
+  getImgAsset
 } from '../utils';
 import PlayingContext from '../contexts/PlayingContext';
 import { default as Glyph } from '../reusables/Glyph';
@@ -29,7 +37,7 @@ export default function ShowPage() {
       startDate = parseDate(start),
       endDate = parseDate(end);
     if (image === null || image === undefined) {
-      let image = getFeaturedImg(slug);
+       image = getImgAsset('ktuh-logo.jpg');
     }
 
     return [<HeadStuff title={entitiesToText(title)}
@@ -40,7 +48,7 @@ export default function ShowPage() {
           <div className='show__heading'>
             <SamePageAnchor href={href}>
               <div className='show__image-div'>
-                <img className='show__image' src={image}/>
+                <img className='show__image' alt='show image' src={image}/>
               </div>
             </SamePageAnchor>
             <div className='show__info'>
