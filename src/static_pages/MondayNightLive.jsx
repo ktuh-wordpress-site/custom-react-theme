@@ -16,7 +16,8 @@ export default function () {
       <div className="show__wrapper"><div className="show__content">
         <div className="show__image-div"><img className="show__image" src=
         {getUploadedImage('MNL-ad.png')}/>
-      </div><div className="show__info__head"><h5 className="show__time">
+      </div>
+        <div className="show__info__head"><h5 className="show__time">
         Mondays from 9:00PM-12:00AM</h5><div className="show-item__genres">
         <Glyph symbol="music" />{' '}Live, Local Music
         </div><div className="show__buttons"><div className="button__wrapper">
@@ -33,7 +34,7 @@ export default function () {
                   <p className="mnl__show__body"/>
                   <p className="mnl__p1">
                   <span className="mnl__desc">60 minutes of live music by local artists on Monday nights!</span></p>
-                  <p className="mnl__p2"></p>
+                  <p className="mnl__p2"/>
                   <span className="mnl__nbsp">&nbsp;</span>
                   <h5 className="show__time">Past Shows</h5>
                   <div className="grid__container__mnl">{
