@@ -1,4 +1,5 @@
-import React, { createContext, useReducer } from 'react';
+import { h, createContext } from 'preact'; /** @jsx h **/
+import { useReducer } from 'preact/hooks';
 
 let initialState = ({
   activeTabColor = '#5940be', truncate,

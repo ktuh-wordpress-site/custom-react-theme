@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useRef, useEffect, useState } from 'preact/hooks';
 import { getFullUrl, getImgAsset } from '../utils/url_utils';
 import { SamePageAnchor, Glyph } from '../reusables';
 import { default as useApiRequest } from '../hooks/useApiRequest';

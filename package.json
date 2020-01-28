@@ -31,6 +31,8 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-react": "^7.17.0",
+    "preact": "^10.2.1",
+    "preact-compat": "^3.19.0",
     "terser-webpack-plugin": "^2.3.0",
     "webpack": "^4.41.3",
     "webpack-bundle-analyzer": "^3.6.0",

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from 'preact/hooks';
 import { getImgAsset } from '../utils/url_utils';
 
 let array = [

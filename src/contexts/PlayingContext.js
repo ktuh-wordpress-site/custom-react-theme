@@ -1,4 +1,5 @@
-import React, { createContext, useState, useEffect } from 'react';
+import { h, createContext} from 'preact'; /** @jsx h **/
+import { useState, useEffect } from 'preact/hooks';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 
 const PlayingContext = createContext({});

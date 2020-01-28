@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import NewsListLatestReviewsItem from './NewsListLatestReviewsItem';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 

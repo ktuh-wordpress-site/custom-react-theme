@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { SamePageAnchor, IThing } from '../reusables';
 import { getFullUrl } from '../utils/url_utils';
 

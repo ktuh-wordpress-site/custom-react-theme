@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'preact/hooks';
 import { getApiRequest } from '../utils/url_utils';
 
 export default function (initialState, endpoint, callback, interval, watch) {

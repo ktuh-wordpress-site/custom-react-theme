@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useState, useEffect } from 'preact/hooks';
 import { default as Dow } from './Dow';
 import { default as VanishingSpan } from './VanishingSpan';
 import { default as Frame } from './Frame';

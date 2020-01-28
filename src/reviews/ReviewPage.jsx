@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { useSlug } from '../hooks/useGeneralContext';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 import { getFeaturedImg } from '../utils/url_utils';

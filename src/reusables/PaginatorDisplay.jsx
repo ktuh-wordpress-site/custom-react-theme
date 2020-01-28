@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useContext } from 'preact/hooks';
 import { default as PaginatorControlContext } from './PaginatorControlContext';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 

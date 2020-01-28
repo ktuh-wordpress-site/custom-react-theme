@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as QAPair } from './QAPair';
 
 export default function ({ title, pairs }) {

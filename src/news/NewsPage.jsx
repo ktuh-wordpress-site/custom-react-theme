@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { useSlug, useApiRequest } from '../hooks';
 import { default as HeadStuff } from '../reusables/HeadStuff';
 import { default as ContentBox } from '../reusables/ContentBox';

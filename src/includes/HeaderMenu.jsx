@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as groupBy } from '../utils/group_by';
 import { default as SamePageAnchor } from '../reusables/SamePageAnchor';
 

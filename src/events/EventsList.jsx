@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as Calendar } from './Calendar';
 import { default as EventItem } from './EventItem';
 import { default as useApiRequest } from '../hooks/useApiRequest';

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useState } from 'preact/hooks';
 import { default as ShowItem } from './ShowItem';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 import { default as HeadStuff } from '../reusables/HeadStuff';

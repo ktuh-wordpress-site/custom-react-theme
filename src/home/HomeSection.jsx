@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as SamePageAnchor } from '../reusables/SamePageAnchor';
 
 export default function HomeSection({ href, text }) {

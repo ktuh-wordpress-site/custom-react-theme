@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { getImgAsset as getImg } from '../utils/url_utils';
 import { default as SocialLink } from './SocialLink';
 import { default as Subheading } from './Subheading';

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as StaffItem } from './StaffItem';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 import { default as HeadStuff } from '../reusables/HeadStuff';

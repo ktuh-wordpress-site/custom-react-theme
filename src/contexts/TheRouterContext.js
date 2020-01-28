@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import { h, createContext } from 'preact'; /** @jsx h **/
 
 const TheRouterContext = createContext();
 

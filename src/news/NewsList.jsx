@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import NewsListSidebarSupport from './NewsListSidebarSupport';
 import NewsListLatestReviews from './NewsListLatestReviews';
 import NewsListContent from './NewsListContent';

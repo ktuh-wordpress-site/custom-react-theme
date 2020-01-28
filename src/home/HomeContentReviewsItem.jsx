@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as SamePageAnchor } from '../reusables/SamePageAnchor';
 import { getFullUrl, getFeaturedImg, getImgAsset } from '../utils/url_utils';
 

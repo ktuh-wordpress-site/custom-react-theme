@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 
 export default function IThing({
   height, allow = 'autoplay', src, scrolling = 'no', ...rest

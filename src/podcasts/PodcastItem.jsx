@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as IThing } from '../reusables/IThing';
 
 export default function PodcastItem({ playlistId }) {

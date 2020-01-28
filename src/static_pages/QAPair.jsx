@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useState } from 'preact/hooks';
 import { default as ContentBox } from '../reusables/ContentBox';
 
 export default function ({ question, content }) {

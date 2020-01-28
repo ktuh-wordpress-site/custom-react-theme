@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { Paginator, HeadStuff } from '../reusables';
 import { default as ReviewItem } from './ReviewItem';
 import { default as useApiRequest } from '../hooks/useApiRequest';

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 
 function parse(data) {
   let retval = [], lines = data.split('\n');

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { getFullUrl } from '../utils';
 import { useApiRequest } from '../hooks';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 
 export default function ({ nodes, addClassName }) {
   let classes = ['nav', 'navbar-nav'];

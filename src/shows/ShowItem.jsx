@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as parseDate, toLocalStr } from '../utils/date_funcs';
 import { getFullUrl } from '../utils/url_utils';
 import { default as SamePageAnchor } from '../reusables/SamePageAnchor';

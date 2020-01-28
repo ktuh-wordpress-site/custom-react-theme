@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useEffect } from 'preact/hooks';
 import { default as Support } from '../includes/Support';
 import { default as HomeContent } from './HomeContent';
 import { default as MetaThing } from '../reusables/MetaThing';

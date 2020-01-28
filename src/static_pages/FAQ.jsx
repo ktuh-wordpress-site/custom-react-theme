@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as QASection } from './QASection';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 import { HeadStuff, ContentBox } from '../reusables';

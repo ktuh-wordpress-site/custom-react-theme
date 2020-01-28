@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { PaginatorControlProvider } from './PaginatorControlContext';
 import { default as PaginatorTop } from './PaginatorTop';
 

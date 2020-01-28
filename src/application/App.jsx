@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import TheRoute from '../the_router/TheRoute';
 import TheSwitch from '../the_router/TheSwitch';
 import { Header, Footer } from '../includes';

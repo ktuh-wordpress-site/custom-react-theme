@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useContext } from 'preact/hooks';
 import { useApiRequest, useSlug } from '../hooks';
 import { HeadStuff, BackButton } from '../reusables';
 import PlaylistTable from './PlaylistTable';

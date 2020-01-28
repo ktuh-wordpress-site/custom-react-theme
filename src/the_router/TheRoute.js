@@ -1,4 +1,5 @@
-import React, { useContext, createElement } from 'react';
+import { h, createElement  } from 'preact'; /** @jsx h **/
+import { useContext } from 'preact/hooks';
 import TheRouterContext, { TheRouterContextProvider } from '../contexts/TheRouterContext';
 import matchThePath from '../utils/match_the_path';
 

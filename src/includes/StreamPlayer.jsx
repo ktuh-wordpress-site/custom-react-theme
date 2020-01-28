@@ -1,6 +1,7 @@
-import React, {
+import { h } from 'preact'; /** @jsx h **/
+import {
   useRef, useEffect, useContext, useState
-} from 'react';
+} from 'preact/hooks';
 import { default as Glyph } from '../reusables/Glyph';
 import { default as PlayingContext } from '../contexts/PlayingContext';
 

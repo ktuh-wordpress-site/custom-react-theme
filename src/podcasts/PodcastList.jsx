@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import PodcastItem from './PodcastItem';
 import { getFullUrl } from '../utils/url_utils';
 import { default as useApiRequest } from '../hooks/useApiRequest';

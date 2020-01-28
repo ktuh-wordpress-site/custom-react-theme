@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { HeadStuff } from '../reusables';
 import EmailLink from '../includes/EmailLink';
 

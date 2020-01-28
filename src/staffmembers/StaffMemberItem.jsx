@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { getMagicFieldsImg } from '../utils/url_utils';
 
 export default function StaffMemberItem({

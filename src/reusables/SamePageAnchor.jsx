@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import { h } from 'preact'; /** @jsx h **/
+import { useContext } from 'preact/hooks';
 import { default as siteInfo } from '../utils/config';
 import { default as TheRouterContext } from '../contexts/TheRouterContext';
 

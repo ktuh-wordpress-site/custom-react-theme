@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as ContentBox } from '../reusables/ContentBox';
 
 export default function ({ bio: content, role, name }) {

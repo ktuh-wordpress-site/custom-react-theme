@@ -1,5 +1,4 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { h, render } from 'preact'; /** @jsx h **/
 import TheBrowserRouter from './the_router/TheBrowserRouter';
 import { default as siteInfo } from './utils/config';
 import App from './application/App';

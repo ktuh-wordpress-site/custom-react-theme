@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import TheRedirect from '../the_router/TheRedirect';
 
 export default function ({ check }) {

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 
 export default function ({ title, body }) {
   return <div className='timeline__node'>

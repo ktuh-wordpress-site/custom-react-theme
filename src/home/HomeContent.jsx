@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as HomeSidebar } from './HomeSidebar';
 import { default as HomeContentSection } from './HomeContentSection';
 import { default as HomeContentNewsItem } from './HomeContentNewsItem';

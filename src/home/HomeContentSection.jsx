@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as useApiRequest } from '../hooks/useApiRequest';
 import { default as MoreButton } from './MoreButton';
 import { default as HomeSection } from './HomeSection';

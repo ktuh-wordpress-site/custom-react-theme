@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as SamePageAnchor } from './SamePageAnchor';
 import { getFullUrl } from '../utils/url_utils';
 

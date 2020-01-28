@@ -36,12 +36,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      'react-dom/server': path.resolve(__dirname, 'node_modules', 'react-dom',
-        'cjs', 'react-dom-server.browser.production.min.js'),
-      'react-dom': path.resolve(__dirname, 'node_modules', 'react-dom', 'cjs',
-        'react-dom.production.min.js'),
-      react: path.resolve(__dirname, 'node_modules',
-        'react', 'cjs', 'react.production.min.js'),
       history: path.resolve(__dirname, 'node_modules', 'history', 'cjs',
         'history.min.js')
     }
@@ -50,7 +44,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules|src\/utils/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
           babelrc: true,
@@ -58,26 +52,6 @@ module.exports = {
           plugins: process.env.DEV_MODE ? [] : ['./babel/hashify']
         }
       },
-      {
-        test: /\.jsx?$/,
-        include: /react/,
-        loader: 'babel-loader',
-        options: {
-          comments: false,
-          plugins: process.env.DEV_MODE ? []
-            : ['@babel/plugin-proposal-throw-expressions',
-              './babel/rightify', './babel/rightify-react']
-        }
-      },
-      {
-        test: /\.jsx?$/,
-        include: /prop-types/,
-        loader: 'babel-loader',
-        options: {
-          comments: false,
-          plugins: process.env.DEV_MODE ? [] : ['@babel/plugin-proposal-throw-expressions', './babel/rightify']
-        }
-      }
     ]
   },
 };

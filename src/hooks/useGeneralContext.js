@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext } from 'preact/hooks';
 import { default as GeneralContext } from '../contexts/GeneralContext';
 
 export default function useGeneralContext() {

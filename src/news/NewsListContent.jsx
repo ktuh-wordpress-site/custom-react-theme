@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact'; /** @jsx h **/
 import { default as Paginator } from '../reusables/Paginator';
 import { default as NewsItem } from './NewsItem';
 import { default as useApiRequest } from '../hooks/useApiRequest';
