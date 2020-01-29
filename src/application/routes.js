@@ -12,12 +12,14 @@ import {
 } from '../static_pages';
 import { default as StaffMembersListContent } from '../staffmembers/StaffMembersListContent';
 import { ShowSchedule, ShowPage } from '../shows';
+import StudioRental from '../static_pages/StudioRental';
 
 export default [
   { path: ['/reviews/:slug', '/review/:slug'], component: ReviewPage },
   { path: ['/reviews', '/review'], component: ReviewList },
   { path: ['/podcasts', '/podcast'], component: PodcastList },
   { path: ['/submit-podcasts', '/submit-podcast'], component: SubmitPodcast },
+  { path: '/studio-rental', component: StudioRental},
   { path: ['/monday-night-live', '/mondaynightlive'], component: MNL },
   { path: ['/radioblog/:slug', '/news/:slug'], component: NewsPage },
   { path: ['/radioblog', '/news'], component: NewsList },
