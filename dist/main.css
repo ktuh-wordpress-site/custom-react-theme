@@ -1062,7 +1062,7 @@ input[placeholder=Search]{padding:15px;font-size:16px;margin-bottom:15px;}
 .mnl__main,.mnl__show__wrapper,.mnl__show__content,.mnl__show__body,.mnl__p1,.mnl__p2{box-sizing:border-box;}
 .mnl__show__info{box-sizing:border-box;}
 .mnl__nbsp{box-sizing:border-box;font-weight:bold;}
-.mnl__desc{box-sizing:border-box;font-weight:bold;font-size:18px;font-style:italic;}
+.mnl__desc{box-sizing:border-box;font-weight:bold;font-size:18px;font-style:italic; float: left}
 .shows {
   padding: 20px 60px 40px;
 }
@@ -1174,10 +1174,10 @@ input[placeholder=Search]{padding:15px;font-size:16px;margin-bottom:15px;}
 }
 .show-item__genres {
   margin: 0;
-  font-size: 10px;
   font-family: 'nimbus-sans-extended', sans-serif;
   font-weight: 900;
   font-size: medium;
+  text-align: left;
   text-transform: uppercase;
   color: #5C5C5C;
 }
@@ -1216,9 +1216,7 @@ input[placeholder=Search]{padding:15px;font-size:16px;margin-bottom:15px;}
   margin-top: 0;
 }
 .show__image-div {
-  display: inline-block;
   width: fit-content;
-  align-items: center;
 }
 .show__image {
   position: relative;
@@ -1261,6 +1259,7 @@ input[placeholder=Search]{padding:15px;font-size:16px;margin-bottom:15px;}
   font-family: 'nimbus-sans-extended', sans-serif;
   text-transform: uppercase;
   font-size: large;
+  text-align: left;
 }
 .show__playlists ul {
   padding: 0;
