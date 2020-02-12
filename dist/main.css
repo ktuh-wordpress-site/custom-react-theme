@@ -261,7 +261,7 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
   font-family:'nimbus-sans-extended', sans-serif;
 }
 .news-list__wrapper{padding:20px 60px;}.news-list{float:left;padding:0 40px 0 0;}
-.news-list__content{float:left;width:67%;display:inline-block;}
+.news-list__content{width:100%;padding: 20px 60px 40px;}
 .news-list__sidebar{float:left;width:33%;max-width:400px;margin:0 0 30px;}
 .news-list__featured{margin:0 0 50px;}.news-list__featured-img{position:relative;}
 .news-list__featured img,.home__featured-img,.alumni__img,
@@ -1122,6 +1122,7 @@ input[placeholder=Search]{padding:15px;font-size:16px;margin-bottom:15px;}
   border-top: thin black solid;
   border-left: thin black solid;
   border-right: thin black solid;
+  border-bottom: thin black solid;
 }
 .show-item__time {
   padding: 0 25px 0 0;
@@ -1823,4 +1824,29 @@ input[type=range] {
 }
 .join__content p a[href="mailto:pd@ktuh.org"], .join__content p a[target="_blank"] {
   font-weight: 900;
+}
+
+.studio-rental_content {
+  text-align: left;
+  margin: 0 auto;
+  font-family: 'nimbus-sans-extended', sans-serif;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.studio-rental__headline {
+  font-family: 'nimbus-sans-extended', sans-serif;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.studio-rental__grid-container{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 90px !important;
+}
+
+.studio-rental__img {
+
 }
