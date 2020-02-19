@@ -125,7 +125,7 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
   font-weight: bold;
   text-transform: uppercase;
   background-color: #333333;
-  opacity: 85%;
+  opacity: 100%;
   color: #fff;
   transition: .3s;
 }
