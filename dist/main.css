@@ -464,7 +464,7 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
   text-decoration:none;
 }
 .color-button.purple-button {
-  border:20px #fff solid;
+  border:15px #fff solid;
   background:#5940de;
   color:#fff;
 }
@@ -1238,6 +1238,7 @@ input[placeholder=Search]{padding:15px;font-size:16px;margin-bottom:15px;}
   color: #666;
   cursor: pointer;
   margin-bottom: 0;
+  text-align: left;
 }
 .show__info .purple-button {
   background-color: white;
