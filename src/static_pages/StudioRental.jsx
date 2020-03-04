@@ -11,7 +11,7 @@ export default function(){
 
       <div className="studio_img">
         <img className="studio_img" src={getUploadedImage('studio-rental.jpg')} alt="" width="413" height="253" />
-        <p>$150/ hour recording</p>
+        <p>$150/hour recording</p>
       </div>
 
       <div className="studio_img">
