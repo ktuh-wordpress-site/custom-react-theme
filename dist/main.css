@@ -450,7 +450,7 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
   font-weight:900;
   text-transform:uppercase;
 }
-.button__wrapper{width:100%;text-align:center;}
+.button__wrapper{width:100%;text-align:left;}
 .color-button {
   max-width:250px;
   padding:10px 25px;
@@ -1025,7 +1025,7 @@ h5,.sm{font-size:.875em;}h1,h2,h3,h4,h5{font-family:'nimbus-sans-extended',sans-
 .about__help a,.faq__section-qna a,.home__next-show-deets a{color:white;}
 .submit__podcast div{float:left;padding-right:25px;}
 .event__title{font-weight:bold;color:#5940de;}.event__image{float:right;}
-p.p1, p.show__tag, p.show__host{padding:0;}
+p.p1, p.show__tag, p.show__host{padding:20px;}
 div.show__info{padding:10px 0;margin:0;}
 img.show__image{height:auto;}
 div.grid__item__mnl1{margin-top:40px; margin-left:20px;width:350px;}
@@ -1430,7 +1430,7 @@ input[placeholder=Search]{padding:15px;font-size:16px;margin-bottom:15px;}
   .show__image-div {
     float: none;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 0px;
     max-width: 100%;
   }
   .show-item__start-time {
