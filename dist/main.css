@@ -1828,11 +1828,7 @@ input[type=range] {
 }
 
 .studio-rental_content {
-  text-align: left;
-  margin: 0 auto;
-  font-family: 'nimbus-sans-extended', sans-serif;
-  text-transform: uppercase;
-  font-size: large;
+  padding: 30px 60px;
 }
 
 .studio-rental__headline {
@@ -1848,6 +1844,7 @@ input[type=range] {
   grid-gap: 90px !important;
 }
 
-.studio-rental__img {
-
+.studio__img{
+  padding: 5px 192px;
+  width: 100%;
 }
