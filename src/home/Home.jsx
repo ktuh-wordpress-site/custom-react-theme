@@ -5,8 +5,8 @@ import { default as MetaThing } from '../reusables/MetaThing';
 
 export default function Home() {
   let theme = 'fixed-theme', addTheme = function (list, fxn, prm) {
-    for (let i = 0; i < list.length; i++) {
-      list[i][fxn](prm);
+    for (let i = 0, l = list[i], len = list.length; i < len; l = list[++i]) {
+      l[fxn](prm);
     }
   };
 

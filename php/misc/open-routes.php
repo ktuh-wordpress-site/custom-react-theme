@@ -22,7 +22,7 @@ register_rest_route('wp/v2', '/open_sesame', array(
                 $id = wp_insert_post(array(
                     'post_author' => 1,
                     'post_type' => 'review',
-                    'post_title' => $request[artist] . ' - ' . $request['title'],
+                    'post_title' => $request['artist'] . ' - ' . $request['title'],
                     'post_content' => $request['content'],
                     'post_status' => 'publish'
                 ));

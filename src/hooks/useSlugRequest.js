@@ -8,7 +8,7 @@ function useSlug() {
 }
 
 export default function useSlugRequest(init, template, callback) {
-  let slug = useSlug(), state = useApiRequest(init, template(slug), callback);
+  let slug = useSlug(), state = useApiRequest(init, template(slug), callback, null, [slug]);
 
   return state;
 }

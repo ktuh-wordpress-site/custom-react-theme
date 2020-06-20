@@ -44,11 +44,12 @@ export default function (
 ) {
   useEffect(function () {
     document.title = `${title} - KTUH FM Honolulu | Radio for the People`;
-    for (let a = 0; a < array.length; a++) {
-      if (!document.querySelector(array[a].selector)) {
-        document.head.innerHTML += array[a].append({
+    for (let a = 0, ar = array[a], len = array.length; a < len; ar = array[++a]) {
+      let { selector, isFor } = ar;
+      if (!document.querySelector(selector)) {
+        document.head.innerHTML += ar.append({
           title: `${title} - KTUH FM Honolulu | Radio for the People`, image, description
-        }[array[a].isFor]);
+        }[isFor]);
       }
     }
   }, []);

@@ -1,4 +1,5 @@
 import { default as Home } from '../home/Home';
+import {default as Interviews} from '../pages/Interviews';
 import { default as ProfilePage } from '../dj_bios/ProfilePage';
 import { ReviewPage, ReviewList } from '../reviews';
 import { NewsPage, NewsList } from '../news';
@@ -37,6 +38,7 @@ export default [
   { path: '/staff', component: StaffMembersListContent },
   { path: '/faq', component: FAQ },
   { path: '/donate', component: Donate },
+  { path: '/interviews', component: Interviews },
   { path: '/not-found', component: NotFound },
   { path: '/:slug', component: PagesItem },
   { path: '/', component: Home }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { getFullUrl } from '../utils/url_utils';
+import { getFullUrl, getUploadedImage } from '../utils/url_utils';
 import { default as useApiRequest } from '../hooks/useApiRequest';
 import { HeadStuff, SamePageAnchor } from '../reusables';
 import PodcastListItem from './PodcastListItem';
@@ -17,8 +17,9 @@ export default function PodcastList() {
     </h4>,
     <div className="podcast-grid__cover">
       <div className='grid__container'>
-        {podcasts.map(({ slug, photo, title }) => (
-        <PodcastListItem href={slug} src={photo} name={title} />))};
+        {podcasts.map(({ slug, photo: [photo], title }) => (
+        <PodcastListItem href={slug} src={photo} name={title} />))}
+        <PodcastListItem href='https://ktuh.org/interviews' src={getUploadedImage('2020/06/interviews.png')} name="Interviews" />
         <PodcastListItem href='https://soundcloud.com/ktuh' name="More Podcasts" />
       </div>
     </div>,

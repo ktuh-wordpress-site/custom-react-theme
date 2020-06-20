@@ -1,10 +1,10 @@
 import React from 'react';
 
 function parse(data) {
-  let retval = [], lines = data.split('\n');
-  for (let l = 0; l < lines.length; l++) {
-    if (lines[l].length) {
-      retval.push(lines[l].replace(/\\,/g, '，').split(',').map(
+  let retval = [], lines = data.split('\n'), longness = lines.length;
+  for (let l = 0, lin = lines[l]; l < longness; lin = lines[++l]) {
+    if (lin.length) {
+      retval.push(lin.replace(/\\,/g, '，').split(',').map(
         (line) => line.replace(/，/g, ',')
       ));
     }

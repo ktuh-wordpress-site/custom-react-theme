@@ -44,17 +44,17 @@ export default function ({ events }) {
         year % 4 === 0 && year % 100 !== 0 ? 29 : 28,
         31, 30, 31, 30, 31, 31, 30, 31, 30, 31
       ],
-      dow = new Date(year, month, 1).getDay(), rows = [];
+      dow = new Date(year, month, 1).getDay(), rows = [], dims = dpm[month];
     rows.push([]);
     for (let g = 0; g < dow; g++) {
       rows[0].push(null);
     }
-    for (let d = 0; d < dpm[month]; d++) {
+    for (let d = 0; d < dims; d++) {
       if (dow === 0 && rows.length > 0) rows.push([]);
       rows.slice(-1)[0][dow] = [(d + 1), filteredEvents.filter(function (event) {
         return event.start.getDate() === (d + 1);
       })];
-      dow = (dow + 1) % 7;
+      dow = (++dow) % 7;
     }
     if (dow > 0) {
       for (let m = dow; m < 7; m++) {

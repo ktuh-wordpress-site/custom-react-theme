@@ -1,8 +1,8 @@
 export function returnPathKeys(path) {
   let found = path.match(/:[A-Za-z]+/g), keys = [];
   if (found) {
-    for (let f = 0; f < found.length; f++) {
-      keys.push(found[f].substring(1));
+    for (let f = 0, flen = found.length, p = found[f]; f++ < flen; p = found[f]) {
+      keys.push(p.substring(1));
     }
   }
 
@@ -45,8 +45,8 @@ export default function matchThePath(pathname, { path, exact }) {
 
   if (!res) return null;
 
-  for (let k = 0; k < keys.length; k++) {
-    params[keys[k]] = res[k + 1];
+  for (let k = 0, key = keys[k], kl = keys.length; k < kl; key = keys[++k]) {
+    params[key] = res[k + 1];
   }
 
   return {

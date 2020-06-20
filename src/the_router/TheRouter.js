@@ -2,14 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { TheRouterContextProvider } from '../contexts/TheRouterContext';
 
 export default function TheRouter({
-  children, history, staticContext, basename
+  children, history, basename
 }) {
   let [location, setLocation] = useState(history.location);
 
   useEffect(function () {
-    if (!staticContext) {
-      history.listen((loc) => setLocation(loc));
-    }
+    history.listen((loc) => setLocation(loc));
   }, []);
 
   return <TheRouterContextProvider value={{
@@ -21,7 +19,6 @@ export default function TheRouter({
       url: '/',
       params: {},
       isExact: location.pathname === '/'
-    },
-    staticContext
+    }
   }}>{children || null}</TheRouterContextProvider>;
 }

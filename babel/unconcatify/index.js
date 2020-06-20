@@ -14,8 +14,8 @@ module.exports = function () {
     }
     let last = nodes.slice(-1)[0];
     return t.binaryExpression('+', recBin(nodes.slice(0, -1)),
-      last.type === 'TemplateElement' ?
-        t.stringLiteral(last.value.cooked) : last);
+      last.type === 'TemplateElement'
+        ? t.stringLiteral(last.value.cooked) : last);
   };
 
   return {
@@ -23,9 +23,9 @@ module.exports = function () {
       TemplateLiteral(path) {
         let { node: { expressions, quasis } } = path,
           arr = [];
-        for (let q = 0; q < quasis.length; q++) {
-          arr.push(quasis[q]);
-          if (!quasis[q].tail) arr.push(expressions[q]);
+        for (let q = 0, len = quasis.length, qua = quasis[q]; q < len; qua = quasis[++q]) {
+          arr.push(qua);
+          if (!qua.tail) arr.push(expressions[q]);
         }
         if (arr.slice(-1)[0].value.cooked === '') {
           arr = arr.slice(0, -1);
