@@ -38,23 +38,8 @@ function create_posttype()
 /* Save hooks */
 require('php/types/reviews/save.php');
 require('php/types/charts/save.php');
+require('php/types/events/save.php');
 
-/*
-add_action('init', 'create_event_tax');
-
-function create_event_tax()
-{
-    register_taxonomy(
-        'event',
-        'event',
-        array(
-            'label' => __('Event'),
-            'rewrite' => array('slug' => 'event'),
-            'hierarchical' => true,
-        )
-    );
-}
-*/
 add_action('init', 'create_posttype');
 
 add_action('rest_api_init', function () {
@@ -67,7 +52,7 @@ add_action('rest_api_init', function () {
     require('php/types/faq/rest.php');
     require('php/types/latest_epi/rest.php');
     require('php/types/mnl_videos/rest.php');
-    require('php/types/now_playing/rest_old.php');
+    require('php/types/now_playing/rest.php');
     require('php/types/podcast/rest.php');
     require('php/types/podcast_series/rest.php');
     require('php/types/posts/rest.php');
