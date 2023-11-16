@@ -16,6 +16,8 @@ function create_posttype()
 {
     add_theme_support('post-thumbnails');
 
+    add_rewrite_rule('^([.+])/?', '^radioblog/$matches[1]', 'bottom');
+
     /* Type registration */
     require('php/types/charts/register.php');
     require('php/types/dj_bios/register.php');
@@ -36,20 +38,7 @@ function create_posttype()
 /* Save hooks */
 require('php/types/reviews/save.php');
 require('php/types/charts/save.php');
-
-add_action('init', 'create_event_tax');
-
-function create_event_tax()
-{
-    register_taxonomy(
-        'event',
-        array(
-            'label' => __('Event'),
-            'rewrite' => array('slug' => 'event'),
-            'hierarchical' => true,
-        )
-    );
-}
+require('php/types/events/save.php');
 
 add_action('init', 'create_posttype');
 

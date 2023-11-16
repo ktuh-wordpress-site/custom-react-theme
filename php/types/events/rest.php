@@ -14,6 +14,11 @@ register_rest_field('event', 'event_name', array(
             return get_post_meta($obj['id'], 'event_date');
         }
     ));
+    register_rest_field('event', 'event_time', array(
+        'get_callback' => function ($obj) {
+            return get_post_meta($obj['id'], 'event_time');
+        }
+    ));
     register_rest_field('event', 'extra_info', array(
         'get_callback' => function ($obj) {
             return get_post_meta($obj['id'], 'extra_info');
@@ -22,11 +27,6 @@ register_rest_field('event', 'event_name', array(
     register_rest_field('event', 'event_location_link', array(
         'get_callback' => function ($obj) {
             return get_post_meta($obj['id'], 'event_location_link');
-        }
-    ));
-    register_rest_field('event', 'event_time', array(
-        'get_callback' => function ($obj) {
-            return get_post_meta($obj['id'], 'event_time');
         }
     ));
     register_rest_field('event', 'location_address', array(
@@ -47,11 +47,6 @@ register_rest_field('event', 'event_name', array(
     register_rest_field('event', 'event_description', array(
         'get_callback' => function ($obj) {
             return get_post_meta($obj['id'], 'event_description');
-        }
-    ));
-    register_rest_field('event', 'event_time', array(
-        'get_callback' => function ($obj) {
-            return get_post_meta($obj['id'], 'event_time');
         }
     ));
     register_rest_field('event', 'event_lineup', array(
