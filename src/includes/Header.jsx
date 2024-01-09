@@ -39,7 +39,7 @@ export default function () {
           </button>
         </a>]}>
       </Navbar>
-      <Navbar nodes={[<StreamPlayer />]}></Navbar>
+      <Navbar nodes={[<StreamPlayer />]} />
     </div>
   </nav>;
 }
