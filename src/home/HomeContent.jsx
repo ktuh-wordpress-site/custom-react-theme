@@ -16,11 +16,10 @@ if (window && window.innerWidth <= 990) {
 if (window && window.innerWidth <= 650) {
   postLength = 1;
 }
-  
 
 export default function () {
   return <div className='content'>
-    {mobile ? <HomeSidebar /> : null}
+    {mobile ?  <HomeSidebar /> : null}
 
     <div className='home__main'>
       <HomeContentSection 

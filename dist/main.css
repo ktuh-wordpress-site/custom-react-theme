@@ -23,6 +23,7 @@ h5{font-size: .900em;}.sm{font-size:1.175em;}h1,h2,h3,h4,h5{font-family:'nimbus-
 .content{
   padding:20px 60px 30px;
   margin-top: -180px;
+  max-width: 1500px;
 }
 .reviews__content{
   padding:20px 60px 30px;
@@ -453,7 +454,6 @@ h5{font-size: .900em;}.sm{font-size:1.175em;}h1,h2,h3,h4,h5{font-family:'nimbus-
 .home__featured-content{width:100%;margin:auto;padding:0 56px;}
 .home__podcast-content, .home__news-content, .home__reviews-content {
   width: 100%;
-  max-width: 90rem;
   flex-direction: row;
   float: left;
   margin: auto;
@@ -500,7 +500,7 @@ h5{font-size: .900em;}.sm{font-size:1.175em;}h1,h2,h3,h4,h5{font-family:'nimbus-
   clear:both;
 }
 .home__sidebar {
-  width:100%;
+  width:22%;
   display:inline-block;
   vertical-align:top;
   background-color:inherit;
@@ -718,6 +718,12 @@ h5{font-size: .900em;}.sm{font-size:1.175em;}h1,h2,h3,h4,h5{font-family:'nimbus-
   .review-page__copy {
     width:100%;
     margin-right: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home__sidebar {
+    width:100% !important;
   }
 }
 
