@@ -6,10 +6,10 @@ export default function PlaylistTable({ tracks }) {
     let retval = tracks;
     if (retval) {
       retval.sort(function (a, b) {
-        if (a.start > b.start) {
+        if (a.start < b.start) {
           return 1;
         }
-        if (a.start < b.start) {
+        if (a.start > b.start) {
           return -1;
         }
         return 0;
@@ -50,14 +50,18 @@ export default function PlaylistTable({ tracks }) {
         <td><b>Time</b></td>
         <td><b>Artist</b></td>
         <td><b>Song</b></td>
+        <td><b>Label</b></td>
+        <td><b>Release</b></td>
       </tr>
     </thead>
     <tbody style={{ overflow: 'scroll' }}>
       {songsSorted().map(({
-        start, artist, song
+        start, artist, song, label, release
       }) => <tr>
           <td className='playlist__timestamp'>{toLocalStr(parseDate(start))}</td>
           <td className='playlist__artist'>{artist}</td>
           <td className='playlist__title'>{song}</td>
+          <td className='playlist__title'>{label && label}</td>
+          <td className='playlist__title'>{release && release}</td>
         </tr>)}</tbody></table>];
 }

@@ -3,7 +3,7 @@ import React from 'react';
 export default function ({ children, title, ...rest }) {
   let style = {};
 
-  if (window.innerWidth <= 800) {
+  if (window && window.innerWidth <= 800) {
     style.fontSize = '.625em';
   }
 
